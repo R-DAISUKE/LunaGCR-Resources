@@ -3,6 +3,11 @@ local base_info = {
     group_id = 133713001
 }
 
+monsters = {
+    { config_id = 1001, monster_id = 25130301, pos = { x = 9359.286, y = 378.333, z = 6012.75 }, rot = { x = 0.000, y = 338.129, z = 0.000 }, level = 36, drop_id = 1000100, pose_id = 501, title_id = 7431, special_name_id = 2743201},
+    { config_id = 1004, monster_id = 25130301, pos = { x = 9358.924, y = 372.321, z = 6015.722 }, rot = { x = 0.000, y = 188.144, z = 0.000 }, level = 36, drop_id = 1000100, pose_id = 1001, title_id = 7431, special_name_id = 2743201 },
+    { config_id = 1012, monster_id = 25130301, pos = { x = 9355.069, y = 372.95, z = 6016.163 }, rot = { x = 0.000, y = 86.415, z = 0.000 }, level = 36, drop_id = 1000100, pose_id = 1002, title_id = 7431, special_name_id = 2743201 }
+}
 
 gadgets = {
     { config_id = 1006, gadget_id = 73094026, pos = { x = 9376.964844, y = 384.921997, z = 6031.383789 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, state = 0 },
@@ -19,7 +24,7 @@ init_config = {
 
 suites = {
     {
-        monsters = {  },
+        monsters = { 1001, 1004, 1012 },
         gadgets = { 1006, 1002, 1010, 1011 },
         regions = { },
         triggers = { },
